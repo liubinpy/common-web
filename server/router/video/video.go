@@ -1,7 +1,7 @@
 package video
 
 import (
-	"common-web/server/api/video"
+	"common-web/server/api/v1/video"
 	"github.com/gin-gonic/gin"
 )
 

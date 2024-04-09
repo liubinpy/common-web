@@ -2,7 +2,6 @@ package initlization
 
 import (
 	"common-web/server/global"
-	"common-web/server/model"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 	"time"
@@ -28,6 +27,5 @@ func InitMysql() *gorm.DB {
 	sqlDB.SetConnMaxIdleTime(time.Duration(global.CommonConfig.Mysql.MaxIdleConns))
 	sqlDB.SetMaxOpenConns(global.CommonConfig.Mysql.MaxOpenConns)
 
-	db.AutoMigrate(&model.User{})
 	return db
 }

@@ -10,3 +10,10 @@ mysql:
   path: 172.16.14.192
   max-idle-conns: 10
   max-open-conns: 100
+
+logger:
+  level: debug
+  filename: server.log
+  max_size: 200
+  max_age: 7
+  max_backups: 10
